@@ -11,4 +11,4 @@
     state=absent
 
 - name: generate new certs with a puppet run
-  command=/usr/local/bin/puppet agent -t
+- command: /usr/local/bin/puppet agent -t
