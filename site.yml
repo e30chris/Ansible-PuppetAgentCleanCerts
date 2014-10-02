@@ -3,6 +3,6 @@
 - name: clean Puppet Agent certs - generate new certs
   hosts: all
   gather_facts: false
-  user: root
+  sudo: yes
   roles:
   - common
