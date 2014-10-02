@@ -4,11 +4,5 @@
   hosts: all
   gather_facts: false
   user: root
-
-- name: delete Puppet Agent SSL directory
-  file:
-    path=/etc/puppetlabs/ssl
-    state=absent
-
-- name: generate new certs with a puppet run
-- command: /usr/local/bin/puppet agent -t
+  roles:
+  - common
