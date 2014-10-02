@@ -2,8 +2,8 @@
 # Remove the Puppet Agents SSL Certs
 - name: delete Puppet Agent SSL directory
   file: 
-    path=/etc/puppetlabs/ssl
-    state=touch
+    path=/etc/puppetlabs/puppet/ssl
+    state=absent
 
 # Generate new Certs for the Puppet Agent
 - name: generate new certs with a puppet run
